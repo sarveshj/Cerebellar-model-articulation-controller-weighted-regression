@@ -12,9 +12,9 @@ import sys
 hash_mapping=defaultdict(dict)
 
 
-									#-----------------------------
-									# Task 1:generate input sample
-									#------------------------------
+		#-----------------------------
+		# Task 1:generate input sample
+		#------------------------------
 
 
 data=np.linspace(0,0.5*np.pi,100)
@@ -30,9 +30,9 @@ input_val=input_train[0:len(input_train):3]
 if len(set(input_val).intersection(set(input_test)))!=0 or len(set(input_val).intersection(set(input_train)))!=0 and len(set(input_train).intersection(set(input_test)))!=0 :
 	print("No cheating ..there is overlap!!")
 
-												#-------------------------------------#
-												# Task 2: Scale the data & quantize it
-												#-------------------------------------#
+	#-------------------------------------#
+	# Task 2: Scale the data & quantize it
+	#-------------------------------------#
 
 
 
@@ -66,10 +66,9 @@ for val in target_train.flatten():
 """
 
 
-
-												#-----------------------#
-												# Generate Hash Mapping #
-												#-----------------------#
+		#-----------------------#
+		# Generate Hash Mapping #
+		#-----------------------#
 
 #map from input values --> 
 input_levels=set(input_train)
@@ -98,10 +97,10 @@ for i in input_levels:
 
 
 
-										#---------------------------------------------------------#
-										# Calculate error, update weights and update weight vector
-										#---------------------------------------------------------#
-	
+		#---------------------------------------------------------#
+		# Calculate error, update weights and update weight vector
+		#---------------------------------------------------------#
+
 epoch=1
 epoch_count= 100
 error_list=list()
